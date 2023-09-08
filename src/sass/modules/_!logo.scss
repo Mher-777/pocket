@@ -1,0 +1,9 @@
+.logo {
+  max-width: 27rem;
+  @include large-mobile {
+    max-width: 17.5rem;
+  }
+  &__link {
+    display: inline-block;
+  }
+}

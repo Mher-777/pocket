@@ -1,0 +1,147 @@
+.header {
+  padding-top: 7rem;
+  position: relative;
+  overflow: hidden;
+  @include large-tablet {
+    padding-top: 5.4rem;
+  }
+  @include large-mobile {
+    padding-top: 3.5rem;
+  }
+  &__parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    @include large-mobile {
+      height: 70%;
+    }
+  }
+  &__logo {
+    @include large-tablet {
+      margin: 0 auto;
+    }
+  }
+  &__image {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    object-fit: contain;
+    z-index: 1;
+    @include large-tablet {
+      right: -17rem;
+      transform: scale(1.7);
+    }
+  }
+  &__bg {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover !important;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      bottom: 0;
+      background: linear-gradient(360deg, #FFF8F1 17.45%, rgba(255, 255, 255, 0) 32.26%), linear-gradient(270.22deg, transparent .06%, rgba(255, 255, 255, 0) 54.84%);
+    }
+  }
+  &__cell {
+    flex: 1 1 auto;
+    &_left {
+      max-width: 53rem;
+      padding-top: 7.5rem;
+      padding-bottom: 7rem;
+      @include small-desktop {
+        padding-top: 3.5rem;
+      }
+      @include large-tablet {
+        text-align: center;
+      }
+      @include large-mobile {
+        padding-top: 7.5rem;
+      }
+      @include small-mobile {
+        max-width: 32rem;
+        margin: 0 auto;
+      }
+    }
+    &_right {
+      max-width: 28rem;
+      @include large-tablet {
+        max-width: 22rem;
+      }
+      @include large-mobile {
+        max-width: 20rem ;
+      }
+    }
+  }
+
+  &__inner {
+    padding-top: 7rem;
+    @include small-desktop {
+      padding-top: 10rem;
+    }
+    @include large-tablet {
+      flex-direction: column-reverse;
+      align-items: center;
+      padding-top: 3rem;
+    }
+    @include large-mobile {
+      padding-top: 14.5rem;
+    }
+
+    @include small-mobile {
+      padding-top: 13.5rem;
+    }
+  }
+
+  &__title {
+    color: var(--color-cork);
+    margin-bottom: 3rem;
+    max-width: 48rem;
+    @include large-mobile {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 1.5rem;
+    span {
+      background-color: var(--color-orange);
+      color: var(--color-white);
+      border-radius: 1.2rem;
+      padding: 0 0.7rem;
+      @include small-mobile {
+        display: inline-block;
+        padding: 0 1rem;
+      }
+    }
+  }
+
+  &__btn {
+    margin-top: 4.5rem;
+    @include large-tablet {
+      margin-top: 3rem;
+    }
+    @include large-mobile {
+      margin-top: 2.5rem;
+    }
+  }
+
+  &__desc {
+    display: block;
+    font-size: 1.3rem;
+    max-width: 38rem;
+    margin-top: 5rem;
+    @include small-desktop {
+      margin-top: 3.5rem;
+    }
+    @include large-tablet {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 2.5rem;
+    }
+  }
+}

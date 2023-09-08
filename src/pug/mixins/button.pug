@@ -1,0 +1,20 @@
+mixin btn(link = false)
+    if (link)
+        +e.A.btn.js-btn.btn__(href=link)&attributes(attributes)
+            +e.back.js-circles
+            +e.SPAN.text
+                if block
+                    block
+    else
+        +e.BUTTON.btn.js-btn.btn__()&attributes(attributes)
+            +e.back.js-circles
+            +e.SPAN.text
+                if block
+                    block
+
+mixin btnFile
+    +e.LABEL.btn-file.btn-file__.js-file
+        +e.INPUT.input(type="file")&attributes(attributes)
+        +e.SPAN.text
+            if block
+                block

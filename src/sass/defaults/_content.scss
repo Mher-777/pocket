@@ -1,0 +1,141 @@
+.content p,
+.p,
+.content li,
+.li {
+	font-size: 1.6rem;
+	line-height: (19/16) * 1;
+	font-weight: 300;
+}
+
+.content ul,
+.content ol {
+}
+
+.content b,
+.b {
+	font-weight: bold;
+}
+
+.content strong,
+.strong {
+	font-weight: 500;
+	font-size: 1.8rem;
+	line-height: 1.38em;
+}
+
+.content a,
+.a {
+	font-weight: 300;
+	font-size: 1.6rem;
+	line-height: 1.37em;
+	text-decoration-line: underline;
+	transition: all linear .2s;
+	&:hover {
+		color: var(--color-grenn);
+	}
+}
+
+.h1,
+.content h1,
+.h2,
+.content h2,
+.h3,
+.content h3,
+	.h4,
+.content h4,
+.h5,
+.content h5,
+.h6,
+.content h6 {
+	font-weight: 400;
+	font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.h1,
+.content h1 {
+	font-size: 6.6rem;
+	line-height: 1.2em;
+	letter-spacing: 0.2rem;
+	font-weight: 600;
+	@include small-desktop {
+		font-size: 5.2rem;
+		letter-spacing: 0.15rem;
+	}
+
+	@include large-tablet {
+		font-size: 4.6rem;
+	}
+
+	@include large-mobile {
+		font-size: 3.4rem;
+	}
+
+	@include small-mobile {
+		font-size: 2.8rem;
+	}
+}
+
+.h2,
+.content h2 {
+	font-size: 4.4rem;
+	line-height: 1.1em;
+	font-weight: 600;
+	@include small-desktop {
+		font-size: 3.6rem;
+	}
+
+	@include large-mobile {
+		font-size: 2.6rem;
+	}
+}
+
+.h3,
+.content h3 {
+	font-family: 'Nunito Sans', Arial, sans-serif;
+	font-size: 3.2rem;
+	line-height: 1.1em;
+	@include small-desktop {
+		font-size: 2.8rem;
+	}
+
+	@include large-tablet {
+		font-size: 2.4rem;
+	}
+
+	@include large-mobile {
+		font-size: 2.2rem;
+	}
+
+	@include small-mobile {
+		font-size: 2rem;
+	}
+}
+
+.h4,
+.content h4 {
+	font-size: 2.6rem;
+	line-height: 1.1em;
+	font-family: 'Nunito Sans', Arial, sans-serif;
+	font-weight: 700;
+	@include small-desktop {
+		font-size: 2.4rem;
+	}
+
+	@include large-tablet {
+		font-size: 2.2rem;
+	}
+
+	@include small-mobile {
+		font-size: 2rem;
+	}
+}
+
+.h5,
+.content h5 {
+	font-size: 2.5rem;
+	line-height: 1.35em;
+}
+
+.h6,
+.content h6 {
+}

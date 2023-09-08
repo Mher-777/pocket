@@ -1,0 +1,39 @@
+.btn {
+  min-width: 16rem;
+  background: linear-gradient(90deg, #0099FA 25.17%, #004ADA 78.83%);
+  color: var(--color-white);
+  padding: 2rem 4rem;
+  border: none;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  border-radius: 1rem;
+
+  &__back {
+    position: absolute;
+    left: -.3rem;
+    top: -.3rem;
+    right: -.3rem;
+    bottom: -.3rem;
+    border-radius: inherit;
+    overflow: hidden;
+    -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+  }
+
+  &__text {
+    z-index: 15;
+    position: relative;
+    text-transform: uppercase;
+    color: var(--color-white);
+    letter-spacing: 1.28px;
+  }
+
+  &:hover {
+    background-color: transparent;
+    color: var(--color-bg);
+    border-color: var(--color-border);
+  }
+
+}

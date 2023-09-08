@@ -1,0 +1,17 @@
+header.header
+    .header__parallax
+        img(src="/img/parallax.png" alt="parallax").header__image
+        .header__bg.absolute(style="background-image: url('app/img/parallax__bg.jpg')")
+    .container
+        .header__logo.logo
+            a(href="#").logo__link
+                img(src="app/img/logo.svg" alt="pocket broker")
+        .header__inner.flex.flex_justify
+            .header__cell.header__cell_left
+                h1(data-aos="fade-up").h1.header__title
+                    | Make your first deposit
+                h3.h3.header__subtitle And start your <span>investment journey</span>
+                +btn().header__btn DEPOSIT
+                span.header__desc *Risk warning: Our services involve significant risk and can result in the loss of your invested capital.
+            .header__cell.header__cell_right
+                img(src="/img/phone.png" alt="phone" data-aos="fade-left")
